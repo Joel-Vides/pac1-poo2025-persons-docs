@@ -1,0 +1,20 @@
+meta {
+  name: Edit
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/persons/0001199600001
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Juan Armando",
+    "lastName": "Perez Mejia",
+    "dni": "0001199600001",
+    "gender": "M"
+  }
+}
