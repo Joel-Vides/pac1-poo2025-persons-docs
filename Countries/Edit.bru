@@ -1,0 +1,18 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/countries/e73c64bd-3bb1-4be3-8c45-d1857fb03dc7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Name": "Honduras",
+    "AlphaCode3": "HND"
+  }
+}
