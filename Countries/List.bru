@@ -5,7 +5,13 @@ meta {
 }
 
 get {
-  url: {{PATH}}/countries
+  url: {{PATH}}/countries?searchTerm&page=2&pageSize=5
   body: none
   auth: none
+}
+
+params:query {
+  searchTerm: 
+  page: 2
+  pageSize: 5
 }

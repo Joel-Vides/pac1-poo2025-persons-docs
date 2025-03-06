@@ -5,7 +5,13 @@ meta {
 }
 
 get {
-  url: {{PATH}}/persons
+  url: {{PATH}}/persons?searchTerm&page=1&pageSize=2
   body: none
   auth: none
+}
+
+params:query {
+  searchTerm: 
+  page: 1
+  pageSize: 2
 }
